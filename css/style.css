@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 10px;
+  font-family: "Noto Sans Shavian", sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(53, 58, 64);
+  /*preferible poner sticky no fixed para el scroll
+  el position sticky hay que ponerlo en el hijo directo del body */
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+}
+.logo img {
+  height: 50px;
+}
+
+ul {
+  list-style: none; /*me limpia los items*/
+  display: flex;
+  padding-right: 10px;
+}
+/*
+podria ponerse de un color determinado si paso con el cursor por encima
+.nav a hover {
+  color: white;
+}
+*/
+a {
+  text-decoration: none; /*me saca el deliniado de las anclas*/
+  padding-right: 10px; /*me separa los links*/
+}
+.colorWhite {
+  color: white;
+}
+.colorGris {
+  color: rgb(79, 83, 87);
+}
+.colorVerde {
+  color: rgb(26, 190, 26);
+}
+
+.fondo {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to right, #000000d4, #00000094, #000000d4),
+    url("../assets/img/ba1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /*attachment para fijar la imagen(efecto paralax)
+  background-attachment: fixed;*/
+  color: white; /*para que la letra queda blanca */
+}
+.contenedorPadre {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: end;
+  line-height: 1.8;
+}
+
+.seccionTexto {
+  width: 30%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 100px;
+  margin-bottom: 100px;
+}
+.titulo {
+  padding-bottom: 20px;
+  text-align: end;
+}
+
+.seccionTexto p {
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+.botones {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.boton {
+  border: solid thin;
+  border-radius: 3px;
+  color: white;
+  padding: 3px 7px;
+}
+
+.botonTickets {
+  border: solid color rgb(41, 167, 68);
+  border-radius: 3px;
+  background-color: rgb(41, 167, 68);
+  color: white;
+  padding: 3px 7px;
+}
+
+.seccionOradores {
+  text-align: center;
+  margin-top: 10px;
+}
+.tituloH2 {
+  font-size: 0.8rem;
+}
+
+.padreTarjetas {
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.tarjeta {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px 5px 0px 0px;
+  object-fit: cover;
+}
+.tarjeta img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.tituloH4 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 2px;
+  font-size: 0.8rem;
+}
+.amarilloH4 {
+  background-color: rgb(200, 200, 55);
+  border-radius: 2px 2px 2px 2px;
+  padding: 2px;
+}
+.celesteH4 {
+  background-color: rgb(73, 139, 165);
+  border-radius: 2px 2px 2px 2px;
+  color: white;
+  padding: 2px;
+}
+.grisH4 {
+  background-color: gray;
+  border-radius: 2px 2px 2px 2px;
+  color: white;
+  padding: 2px;
+}
+.rojoH4 {
+  background-color: red;
+  border-radius: 2px 2px 2px 2px;
+  color: white;
+  padding: 2px;
+}
+.textoH h3 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.textoH p {
+  height: 200px;
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+/*
+.imagenOctubre {
+  display: flex;
+  flex-direction: row;*/
+
+.padreOctubre {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 5px;
+}
+
+.hijoUno {
+  width: 50%;
+}
+
+.hijoUno img {
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.hijoDos {
+  width: 50%;
+  height: 400px;
+  padding: 10px;
+  background-color: rgb(53, 58, 64);
+  color: white;
+}
+
+.textoOctubre h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.textoOctubre p {
+  font-weight: 200;
+  font-size: 0.8rem;
+  line-height: 1.8;
+
+  margin-bottom: 10px;
+}
+
+.textoOctubre a {
+  font-weight: 200;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: white;
+  border: solid thin white;
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+
+.tituloForm {
+  text-align: center;
+  line-height: 1.6;
+}
+.tituloArriba {
+  font-size: 0.6rem;
+}
+
+.seccionForm p {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/*PROBLEMAS CON EL FORMULARIO ,NO SE ME APLICARON LOS BORDES CUANDO LO ARME EN HTML*/
+
+.contenedorForm {
+  width: 500px;
+  padding: 30px;
+  margin: auto;
+}
+.contenedorForm p {
+  width: 100%;
+  text-align: left;
+  font-size: 0.6rem;
+}
+.enviar {
+  text-align: center;
+  border: solid rgba(63, 169, 6, 0.696);
+  width: 440px;
+  background-color: rgba(63, 169, 6, 0.696);
+  border-radius: 2px 2px 2px 2px;
+  padding: 5px;
+}
+.nombre {
+  border: solid thin black;
+  border-radius: 2px 2px 2px 2px;
+  margin-right: 110px;
+}
+.apellido {
+  border: solid thin black;
+  border-radius: 2px 2px 2px 2px;
+}
+.texto {
+  border: solid thin black;
+  border-radius: 2px 2px 2px 2px;
+}
+
+.footer {
+  height: 50px;
+  background-image: linear-gradient(
+    to right top,
+    #1d3744,
+    #1d3e4f,
+    #1d455a,
+    #1d4c66,
+    #1e5372
+  );
+}
+
+.iconos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  margin: 20px;
+  font-size: 0.8rem;
+}
+
+/*
+@media screen and(max-width:800px) {
+  .hijoUno,
+  .hijoUno img,
+  .hijoDos {
+    width: 100%;
+  }
+}*/
+
+/*
+lugarFecha {
+  background-color: grey;
+  height: 600px;
+}
+/*asi llamamos a la imagen y le ponemos el porcentaje que es relativo a su contenedor
+padre*/
+
+/*header {
+  background-color: rgba(128, 128, 128, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-position: cover;
+  }
+}
+img {
+  width: 120px;
+}
+/*
+.menu {
+  float: right;
+}
+.menu ul {
+  list-style: none;
+}
+.menu ul li {
+  display: inline-block;
+}
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+.menu ul li a:hover {
+  background-color: aqua;
+}
+/*
+.tituloimagen {
+  color: white;
+}
+
+.textoimagen {
+  color: white;
+}
+
+
+.botontickets {
+  color: rgb(41, 167, 68);
+}
+ .fondo {
+  height: 600px;
+  background: linear-gradient(to right, #000000d4, #00000094, #000000d4),
+    url("../assets/img/ba1.jpg");
+  background: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+*/
