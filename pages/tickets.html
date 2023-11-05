@@ -1,79 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Proyecto integrador front/Duarte Vanesa</title>
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/style.css">
-      </head>
-    <body>
-          <header>
-              <!--hay una etiq que se llama ancla que contiene a un hipervinculo,es decir
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto integrador front/Duarte Vanesa</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navColor navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="../assets/img/codoacodo.png" alt="logo de codo a codo 4.0" width="100px" loading="lazy">
+            </a>
+            <h2 class="tituloNav">Conf Bs As</h2>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html#conferencia">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#oradores">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..//index.html#lugarFecha">Lugar y fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..//index.html#formOrador">Conviertete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class=" colorVerde nav-link" href="#">Comprar tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+
+
+
+      <!--hay una etiq que se llama ancla que contiene a un hipervinculo,es decir
               si tengo una imagen y la toco me lleva a otra pag(Enlace
               absoluto cuando el enlace me lleva a una dir externa y tengo que ponerle target 
-              para que se abra en otra pestaña y no en la mia )-->
-          <div>
-                <div class="logo">
-                  <a href="#">
-                    <img src="../assets/img/codoacodo.png" alt="logo de codo a codo 4.0" />
-                    
-                  </a>
+              para que se abra en otra pestaña y no en la mia )-
+      <div>
+        <div class="logo">
+          <a href="#">
+            <img
+              src="../assets/img/codoacodo.png"
+              alt="logo de codo a codo 4.0"
+            />
+          </a>
 
-
-                  
-                  <h2 class="titLogo">Conf Bs As</h2>
-                </div>
-                <div>
-                      <!--Los enlaces que van en la nav principal van envueltos en otra etiq mas,
-                    en esta se agrupan etiq que juntas tienen sentido-->
+          <h2 class="titLogo">Conf Bs As</h2>
+        </div>
+       <div>
+          <!--Los enlaces que van en la nav principal van envueltos en otra etiq mas,
+                    en esta se agrupan etiq que juntas tienen sentido--
                     <nav>
-                      <!--vamos a agregar la imagen con css porque va de fondo-->
+                      <!--vamos a agregar la imagen con css porque va de fondo--
                       
                           <ul>
-                            <!--ul listas desordenadas y ol listas ordenadas-->
-            
+                            <!--ul listas desordenadas y ol listas ordenadas--
                             <li><a class="colorWhite linkNav "href="./index.html#conferencia">La conferencia </a></li>
                             <li><a class="colorGris linkNav "href="../index.html#oradores">Los oradores </a></li>
                             <li><a class="colorGris linkNav "href="../index.html#lugarFecha">El lugar y la fecha </a></li>
                             <li><a class="colorGris linkNav "href="../index.html#formularioOrador">Conviertete en orador</a></li>
                             <li><a class="colorVerde linkNav "href="#">Comprar tickets</a></li>
-                          <!--En el main va el contenido principal (aunque a veces tambien el contenido pricipal va en la cabecera)-->
-                          <ul/>
+                          <!--En el main va el contenido principal (aunque a veces tambien el contenido pricipal va en la cabecera)--
+                          <ul />
+                     <nav />
+        </div>
+      </div>-->
+    
+    
+          <main class="container-fluid w-75" >
             
-                    <nav/>
-      
-      
-                </div>
+              <section class="container">
+                <div class="row justify-content-center text-center">
 
-
-          </div>
-          
-         
-         
-        
-              
-            </header>
-            <main>
-
-              <section>
-
-                <div>
-
-                  <div>
-                    <h2>Estudiante</h2>
+                  <div class="col-4 border border-info" "><h2>Estudiante</h2>
                     <p>Tienen un descuento</p>
                     <p>80%</p>
                     <p>*Presentar documentación</p>
-                  
                   </div>
-                  <div><h2>Trainee</h2>
+                  <div  class="col-4 border border-success"><h2>Trainee</h2>
                     <p>Tienen un descuento</p>
                     <p>50%</p>
                     <p>*Presentar documentación</p>
                   
                   </div>
-                  <div><h2>Junior</h2>
+                  <div class="col-4 border border-warning"><h2>Junior</h2>
                     <p>Tienen un descuento</p>
                     <p>15%</p>
                     <p>*Presentar documentación</p>
@@ -81,97 +103,120 @@
                   </div>
                 </div>
               </section>
-
-              <section>
-
-                <br>
-
-                <div>
-
-                  <div><h3>VENTA</h3></div>
-                  <div><h2>VALOR DE TICKET $200 </h2></div>
+              
+              <section class="container">
+                <div class="text-center mt-4">
+                  <div>
+                    <div><h6>VENTA</h6></div>
+                    <div><h2>VALOR DE TICKET $200 </h2></div>
+                  </div>
+                  <br>
                 </div>
 
-                <br>
-                <form action="">
+                <div class="container class="">
+                 <form class="row  g-3 ">
+                      <div class="row g-3 justify-content-center">
+                        
+                          <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" 
+                            id="nombre"required/>
+                            <div class="invalid-feedback" id="mensajeErrorNombre">
+                              <p>Ingrese su nombre</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Apellido"
+                              aria-label="Apellido"
+                              id="apellido"
+                              required />
+                              <div class="invalid-feedback" id="mensajeErrorApellido">
+                                <p>Ingrese su apellido</p>
+                              </div>
+                          </div>
+                          
+                          <div class="col-md-12" >
+                            <input
+                              type="email"
+                              class="form-control"
+                              placeholder="Email"
+                              aria-label="Email"
+                              id="mail"
+                              required />
+                              <div class="invalid-feedback" id="mensajeErrorMail">
+                                <p>Ingrese su Email</p>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label for="cantidadTickets" class="form-label">Cantidad</label>
+                            <input
+                              type="number"
+                              class="form-control"
+                              placeholder="Cantidad"
+                              aria-label="Cantidad"
+                              id="cantidadTickets"
+                              min="1"
+                              required
+                              />
+                          </div>
+                          <div class="col-md-6">
+                            <label for="selecCateg" class="form-label">Categoria</label>
+                            <select class="form-select" aria-label="Categoria" id="selecCategoria">
+                              <option value="" selected>--Seleccione--</option>
+                              <option value="0">Sin categoría</option>
+                              <option value="1">Estudiante</option>
+                              <option value="2">Trainee</option>
+                              <option value="3">Junior</option>
+                            </select>
+                          </div> 
+                          <div class="invalid-feedback" id="mensajeErrorCategoria">
+                            <p>Ingrese una categoría </p> 
+                          </div>
+                          <div class="alert-primary mt-2 mb-4" role="alert">
+                            Total a pagar: $ <span id="totalPago" class="align-middle"></span>
+                          </div>
+                          
+                          <div class= "row gx-2">
+                            <div class="col-md mb3">
+                              <button type="reset" class=" botonTickets w-100 btn btn-lg btn-form botonesTickets"  id="btnBorrar" >Borrar</button>
+                            </div>
+                            <div class="col-md mb-3">
+                              <button type="button" class=" botonTickets w-100 btn btn-lg btn-form botonesTickets"  id="btnResumen" >Resumen</button>
+                            </div>
+                          </div>
+                          
+                            
+                          </div>
+                      </div>
 
-                  <div>
-                    <input type="text" id="name" name="name" placeholder="Nombre"required>
-                    <input type="text" id="apellido" name="apellido" placeholder="Apellido"required>
-                                
-                  </div>
+                    </form>    
+                </div>
+               <br>
+             </section>
 
-                  <div>
-                    <input type="text" id="correo" name="correo" placeholder="Correo"required>
-
-                  </div>
-                  <div>
-                    <p>Cantidad</p>
-                    <input type="text" id="cantidad" name="cantidad" placeholder="Cantidad" required>   
-                    
-                    <p>Categoria</p>
-                    <input type="text" id="estudiante" name="estudiante" placeholder="Estudiante" required>
-                  
-                  
-                  </div>
-
-                  <div>
-                    <p>Total a Pagar $</p>
-                  </div>
-
-                  <div>
-                    <input type="submite" value="Borrar">
-                    <input type="submite" value="Resumen">
-                  </div>
-
-
-                </form>
-
-                <br>
-
-                
-
-              </section>
+              
+            
                
+          </main>
 
-            </main>
+            <footer class="footer  text-center ">
+              <div class="container h-100">
+                <nav class="row justify-content-evenly align-items-center h-100 flex-wrap">
+                  <a class="col"href="../PrimerProyectoGit/pages/404.html">Preguntas frecuentes</a>
+                  <a class="col"href="">Contactanos</a>
+                  <a class="col"href="../PrimerProyectoGit/pages/404.html">Prensa</a>
+                  <a class="col"href="#conferencia">Conferencias</a>
+                  <a class="col"href="../PrimerProyectoGit/pages/404.html">Términos y condiciones</a>
+                  <a class="col"href="../PrimerProyectoGit/pages/404.html">Privacidad</a>
+                  <a class="col"href="#formOrador">Estudiantes</a>
+                </nav>
+              </div>
+            </footer>
                  
-                    <footer class="footer">
-                      <Div class="iconos">
-
-                        <Div>
-                          Preguntas <br>
-                           frecuentes
-      
-                        </Div>
-                        <Div>
-                          Contactanos
-      
-                        </Div>
-                        <Div>
-                          Prensa
-      
-                        </Div>
-                        <Div>
-                          Conferencias
-      
-                        </Div>
-                        <Div>
-                          Terminos y
-                          <br> condiciones
-      
-                        </Div>
-                        <div>
-                          Privacidad
-                        </div>
-                        <div>
-                          Estudiantes
-                        </div>
-                      </Div>
-      
-
-
-                    </footer>
+                 
                     <script src= "../js/bootstrap.bundle.min.js"></script>
-        </body>
+                    <script src= "../js/script.js"></script>
+  </body>
 </html>
