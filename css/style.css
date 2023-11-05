@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  border: 0;
+
   box-sizing: border-box;
 }
 body {
@@ -8,11 +8,19 @@ body {
   font-family: "Noto Sans Shavian", sans-serif;
 }
 
-header {
+.navColor {
+  background-color: rgb(53, 58, 64);
+}
+
+.tituloNav {
+  color: white;
+}
+
+/*.head {
   width: 100%;
   background-color: rgb(53, 58, 64);
   /*preferible poner sticky no fixed para el scroll
-  el position sticky hay que ponerlo en el hijo directo del body */
+  el position sticky hay que ponerlo en el hijo directo del body *
   position: sticky;
   top: 0;
   display: flex;
@@ -20,7 +28,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-}
+}*
 
 .logo {
   display: flex;
@@ -30,34 +38,34 @@ header {
 }
 .logo img {
   height: 50px;
-}
+}*/
 
 ul {
   list-style: none; /*me limpia los items*/
   display: flex;
   padding-right: 10px;
 }
-/*
-podria ponerse de un color determinado si paso con el cursor por encima
+
+/*podria ponerse de un color determinado si paso con el cursor por encima*/
 .nav a hover {
   color: white;
 }
-*/
+
 a {
-  text-decoration: none; /*me saca el deliniado de las anclas*/
+  text-decoration: none; /*me saca el deliniado de las anclas*
   padding-right: 10px; /*me separa los links*/
 }
+
 .colorWhite {
   color: white;
 }
 .colorGris {
   color: rgb(79, 83, 87);
 }
-.colorVerde {
+.navbar-dark .navbar-nav .nav-link.colorVerde {
   color: rgb(26, 190, 26);
 }
-
-.fondo {
+* .fondo {
   width: 100%;
   height: 600px;
   background: linear-gradient(to right, #000000d4, #00000094, #000000d4),
@@ -67,8 +75,9 @@ a {
   background-position: center;
   /*attachment para fijar la imagen(efecto paralax)
   background-attachment: fixed;*/
-  color: white; /*para que la letra queda blanca */
+  color: white; /*para que la letra queda blanca*/
 }
+
 .contenedorPadre {
   width: 100%;
   height: 100%;
@@ -86,6 +95,7 @@ a {
   flex-wrap: wrap;
   margin-right: 100px;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 .titulo {
   padding-bottom: 20px;
@@ -100,13 +110,14 @@ a {
   display: flex;
   justify-content: end;
   gap: 10px;
+  height: 40px;
 }
 
 .boton {
   border: solid thin;
   border-radius: 3px;
   color: white;
-  padding: 3px 7px;
+  margin: 3px 7px;
 }
 
 .botonTickets {
@@ -115,6 +126,9 @@ a {
   background-color: rgb(41, 167, 68);
   color: white;
   padding: 3px 7px;
+}
+* .imgOradores {
+  object-fit: cover;
 }
 
 .seccionOradores {
@@ -157,42 +171,80 @@ a {
   margin-bottom: 2px;
   font-size: 0.8rem;
 }
-.amarilloH4 {
-  background-color: rgb(200, 200, 55);
+
+.amarilloH6 {
+  background-color: rgb(250, 210, 50);
   border-radius: 2px 2px 2px 2px;
   padding: 2px;
+  margin-top: 30px;
+  height: 30px;
 }
-.celesteH4 {
-  background-color: rgb(73, 139, 165);
-  border-radius: 2px 2px 2px 2px;
+
+.celesteH6 {
+  background-color: rgb(40, 131, 167);
+  border-radius: 3px 3px 3px 3px;
   color: white;
   padding: 2px;
+  margin-top: 30px;
+  height: 30px;
 }
-.grisH4 {
+
+.grisH6 {
   background-color: gray;
-  border-radius: 2px 2px 2px 2px;
+  border-radius: 3px 3px 3px 3px;
   color: white;
   padding: 2px;
+  margin-top: 30px;
+  height: 30px;
 }
-.rojoH4 {
-  background-color: red;
-  border-radius: 2px 2px 2px 2px;
+
+.rojoH6 {
+  background-color: rgba(231, 11, 11, 0.961);
+  border-radius: 3px 3px 3px 3px;
   color: white;
   padding: 2px;
+  margin-top: 30px;
+  height: 30px;
 }
-.textoH h3 {
-  font-size: 1rem;
-  margin-bottom: 15px;
+
+.textoH {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
 }
 .textoH p {
-  height: 200px;
+  height: 150px;
   font-size: 0.8rem;
   line-height: 1.8;
+}
+.botonConoceM {
+  font-weight: 200;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: white;
+  border: solid thin white;
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+.textoOctubre {
+  color: white;
+  padding-top: 5px;
+  background-color: rgb(53, 58, 64);
+}
+
+.botonTickets {
+  background-color: rgb(41, 167, 68);
+}
+.conteinerForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 /*
 .imagenOctubre {
   display: flex;
-  flex-direction: row;*/
+  flex-direction: row;
+}
 
 .padreOctubre {
   width: 100%;
@@ -219,21 +271,14 @@ a {
   width: 50%;
   height: 400px;
   padding: 10px;
-  background-color: rgb(53, 58, 64);
+ 
   color: white;
 }
-
+/*
 .textoOctubre h2 {
   font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 5px;
-}
-.textoOctubre p {
-  font-weight: 200;
-  font-size: 0.8rem;
-  line-height: 1.8;
-
-  margin-bottom: 10px;
 }
 
 .textoOctubre a {
@@ -245,7 +290,7 @@ a {
   border-radius: 5px;
   padding: 8px 10px;
 }
-
+*/
 .tituloForm {
   text-align: center;
   line-height: 1.6;
@@ -254,7 +299,7 @@ a {
   font-size: 0.6rem;
 }
 
-.seccionForm p {
+.seccionForm {
   text-align: center;
   font-size: 0.8rem;
 }
@@ -266,6 +311,7 @@ a {
   padding: 30px;
   margin: auto;
 }
+
 .contenedorForm p {
   width: 100%;
   text-align: left;
@@ -273,18 +319,19 @@ a {
 }
 .enviar {
   text-align: center;
-  border: solid rgba(63, 169, 6, 0.696);
-  width: 440px;
-  background-color: rgba(63, 169, 6, 0.696);
+  background-color: rgb(41, 167, 68);
   border-radius: 2px 2px 2px 2px;
   padding: 5px;
+  margin-bottom: 5px;
 }
 .nombre {
+  text-align: center;
   border: solid thin black;
   border-radius: 2px 2px 2px 2px;
   margin-right: 110px;
 }
 .apellido {
+  text-align: center;
   border: solid thin black;
   border-radius: 2px 2px 2px 2px;
 }
@@ -294,7 +341,7 @@ a {
 }
 
 .footer {
-  height: 50px;
+  height: 15vh;
   background-image: linear-gradient(
     to right top,
     #1d3744,
@@ -304,7 +351,10 @@ a {
     #1e5372
   );
 }
-
+.footer a {
+  color: white;
+}
+/*
 .iconos {
   display: flex;
   flex-wrap: wrap;

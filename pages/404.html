@@ -1,57 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Proyecto integrador front/Duarte Vanesa</title>
-      </head>
-    <body>
-      <header>
-          <!--hay una etiq que se llama ancla que contiene a un hipervinculo,es decir
-          si tengo una imagen y la toco me lleva a otra pag(Enlace
-          absoluto cuando el enlace me lleva a una dir externa y tengo que ponerle target 
-          para que se abra en otra pestaña y no en la mia )-->
-    
-          <a href="../index.html">
-            <img src="../assets/img/codoacodo.png" alt="logo de codo a codo 4.0" />
-            
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto integrador front/Duarte Vanesa</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header class="head">
+      <nav class="navColor navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="../assets/img/codoacodo.png"
+              alt="logo de codo a codo 4.0"
+              width="100px"
+              loading="lazy"
+            />
           </a>
-          
-          
-          <h2>Conf Bs As</h2>
-    
-          <!--Los enlaces que van en la nav principal van envueltos en otra etiq mas,
-          en esta se agrupan etiq que juntas tienen sentido-->
-          <nav>
-            <!--vamos a agregar la imagen con css porque va de fondo-->
-            
-              <ul>
-                <!--ul listas desordenadas y ol listas ordenadas-->
-    
-                <li><a href="../index.html#conferencia">La conferencia </a></li>
-                <li><a href="../index.html#oradores">Los oradores </a></li>
-                <li><a href="../index.html#lugarFecha">El lugar y la fecha </a></li>
-                <li><a href="../index.html#formularioOrador">Conviertete en orador</a></li>
-                
-              <!--En el main va el contenido principal (aunque a veces tambien el contenido pricipal va en la cabecera)-->
-              <ul/>
-    
-          <nav/>
-        </header>
-        <main>
-          <h1>UPS!! ERROR 404 </h1>
-          <p>La pagina no ha sido encontrada</p>
-          <img src="../assets/img/error-404-1252056_1280.png" alt="imagen de pagina con error">
-          
+          <h2 class="tituloNav">Conf Bs As</h2>
 
-        </main>
-        <aside>    
-                 
-        </aside>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html#conferencia"
+                  >La conferencia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#oradores"
+                  >Los oradores</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#lugarFecha"
+                  >Lugar y fecha</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#formOrador"
+                  >Conviertete en orador</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="colorVerde nav-link" href="./tickets.html"
+                  >Comprar tickets</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>UPS!! ERROR 404</h1>
+      <p>La pagina no ha sido encontrada</p>
+      <img
+        src="../assets/img/error-404-1252056_1280.png"
+        alt="imagen de pagina con error"
+      />
+    </main>
 
-                <footer class="footer">
-
-                </footer>
-      
-    </body>
+    <footer class="footer text-center">
+      <div class="container h-100">
+        <nav
+          class="row justify-content-evenly align-items-center h-100 flex-wrap"
+        >
+          <a class="col" href="../PrimerProyectoGit/pages/404.html"
+            >Preguntas frecuentes</a
+          >
+          <a class="col" href="../index.html#oradores">Contactanos</a>
+          <a class="col" href="../pages/404.html">Prensa</a>
+          <a class="col" href="../index.html#conferencia">Conferencias</a>
+          <a class="col" href="../pages/404.html">Términos y condiciones</a>
+          <a class="col" href="../pages/404.html">Privacidad</a>
+          <a class="col" href="../index.html#orador">Estudiantes</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

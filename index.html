@@ -16,10 +16,6 @@ identarlo hacia la derecha(con tab y si quiero volver shif y tab)-->
     <!--FAVICON-->
     <link rel="shortcut icon" href="./Proyecto/assets/img/fabicon.icon.png" type="image/x-icon"/>
     
-
-
-    
-
   </head>
 
   <!--body:dentro del body van a ir las etiq que el usuario va a ooder
@@ -32,13 +28,13 @@ identarlo hacia la derecha(con tab y si quiero volver shif y tab)-->
     <!--header:se encarga de tener una cabecera en todas las paginas
     tengo que ponerle una clase al header y como tiene titulo puedo hacer una seccion ,si
     no hay titulo conviene ponerle un div-->
-        <header>
+        <header class="head">
           <!--hay una etiq que se llama ancla que contiene a un hipervinculo,es decir
           si tengo una imagen y la toco me lleva a otra pag(Enlace
           absoluto cuando el enlace me lleva a una dir externa y tengo que ponerle target 
           para que se abra en otra pestaña y no en la mia )-->
             
-                      <div class="logo">
+                      <!--<div class="logo">
                         <a href="#">
                         <img src="./assets/img/codoacodo.png" alt="logo de codo a codo 4.0"  />
                         </a>
@@ -47,33 +43,60 @@ identarlo hacia la derecha(con tab y si quiero volver shif y tab)-->
 
                       
                                 <nav>
-                                  <!--vamos a agregar la imagen con css porque va de fondo-->
+                                  <!--vamos a agregar la imagen con css porque va de fondo--
                                   
                                     <ul>  
                                       <!--ul listas desordenadas y ol listas ordenadas-->
                                       <!--a estas clases se le llaman utilitarias y puedo usarlas varias veces-->
-                                      <!--los anclas ya vienen con color establecido o sea no heredan-->
+                                      <!--los anclas ya vienen con color establecido o sea no heredan--
                                       
                                           <li ><a class="colorWhite linkNav "href="#conferencia">La conferencia </a></li>
                                           <li ><a class="colorGris linkNav"href="#oradores">Los oradores </a></li>
                                           <li ><a class="colorGris linkNav"href="#lugarFecha">El lugar y la fecha </a></li>
-                                          <li ><a class="colorGris linkNav"href="#formularioOrador">Conviertete en orador</a></li>
+                                          <li ><a class="colorGris linkNav"href="#formOrador">Conviertete en orador</a></li>
                                           <li ><a class="colorVerde linkNav"href="./pages/tickets.html">Comprar tickets</a></li>
 
-                                      <!--En el main va el contenido principal (aunque a veces tambien el contenido pricipal va en la cabecera)-->
+                                      <!--En el main va el contenido principal (aunque a veces tambien el contenido pricipal va en la cabecera)--
                                     <ul/>
                                     <!--Los enlaces que van en la nav principal van envueltos en otra etiq mas,
-                                    en esta se agrupan etiq que juntas tienen sentido-->
+                                    en esta se agrupan etiq que juntas tienen sentido--
 
-                                <nav/>
+                                <nav/>-->
+                                <nav class="navColor navbar navbar-expand-lg navbar-dark">
+                                  <div class="container">
+                                    <a class="navbar-brand" href="#">
+                                      <img src="./assets/img/codoacodo.png" alt="logo de codo a codo 4.0" width="100px" loading="lazy">
+                                      </a>
+                                      <h2 class="tituloNav">Conf Bs As</h2>
 
-                      
-
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                      <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                                        <li class="nav-item">
+                                          <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#oradores">Los oradores</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#lugarFecha">Lugar y fecha</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#formOrador">Conviertete en orador</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class=" colorVerde nav-link" href="./pages/tickets.html">Comprar tickets</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </nav>
         </header>
-
         <main> 
           
-              <section class="fondo">
+              <section class="fondo" id="conferencia">
                
                 <div class="contenedorPadre">
 
@@ -89,32 +112,212 @@ identarlo hacia la derecha(con tab y si quiero volver shif y tab)-->
                     </p>
                     <div class="botones">
 
-                      <a class="boton"href="#">Quiero ser orador</a>
-                      <a class="botonTickets"href="">Comprar tickets</a>
+                      <a class="boton"href="#formOrador">Quiero ser orador</a>
+                      <a class="botonTickets"href="./pages/tickets.html">Comprar tickets</a>
 
                     </div>
                     
-
-
-
                   </div>
                   
                 </div>
                   
-                  
-                 
-                   
-               
               </section>
 
-
-          
                   <!--hay 3 formas para escribir en dos renglones esta frase ;con el br(salto de linea)
                    con una etiqueta spam o con un Div.El div es una etiq comodin que nos ayuda a dividir
                  cosas que queremos estilar de diferente forma -->
 
-            <section>
-              <!--<h2><span>Conoce a los</span><br>oradores</h2> -->
+              <section class="container-fluid" id="oradores"> 
+                  <div class="container mb-4">
+                          <div class="text-center">
+                            <div>
+                              <h2 class="tituloH2 mt-4">CONOCE A LOS</h2 >
+                            </div>
+                            <div>
+                              <h2>ORADORES</h2>
+                            </div>
+                          </div>
+                        
+                          <div class="row justify-content-center">
+                              <div class="border border-2 col-12 col-md-4">
+                                <!--IMAGENES ABSOLUTAS Y RELATIVAS-->
+                                <img src="./assets/img/steve.jpg" alt="Imagen de Steve Jobs con celular en mano " class="w-100 h-50" class="imgOradores"loading="lazy">
+                                <div class="tituloH4">
+                                  <div class="amarilloH6"> <h6>JavaScrip</h6></div>
+                                  <div class="celesteH6"><h6>React</h6> </div>
+                                </div>
+                                <div class="textoH">
+                                  <h3>Steve Jobs</h3>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Corrupti tempore minus quasi totam ut facere tenetur quaerat, et, reiciendis, nobis sapiente sint.
+                                      Eius voluptatem corporis eveniet saepe libero architecto fuga.</p>
+                                </div>
+                              </div>
+                              
+                              <div class="border border-2 col-12 col-md-4">
+                                  <img src="./assets/img/bill.jpg" alt="Imagen de Bill Gates" class="w-100 h-50" class="imgOradores" loading="lazy">
+                                  <div class="tituloH4">
+                                    <div class="amarilloH6"> <h6 >JavaScrip</h6></div>
+                                    <div class="celesteH6"><h6>React</h6></div>
+                                  </div>
+                                  <div class="textoH">
+                                    <h3>Bill Gates</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                      Corrupti tempore minus quasi totam ut facere tenetur quaerat, et, reiciendis, nobis sapiente sint.
+                                        Eius voluptatem corporis eveniet saepe libero architecto fuga.</p>
+                                  </div>   
+                              </div>
+                              <div class="border border-2 col-12 col-md-4">
+                                  <img src="./assets/img/ada.jpeg" alt="Imagen de Ada Lovelace" class="w-100 h-50" class="imgOradores" loading="lazy">
+                                  <div class="tituloH4">
+                                    <div class="grisH6"><h6>Negocios</h6> </div>
+                                    <div class="rojoH6"> <h6>startups</h6> </div>
+                                  </div>
+                                  <div class="textoH">
+                                    <h3>Ada Lovelace</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                      Corrupti tempore minus quasi totam ut facere tenetur quaerat, et, reiciendis, nobis sapiente sint.
+                                        Eius voluptatem corporis eveniet saepe libero architecto fuga.</p>
+                                  </div>
+                               </div>  
+                  </div>
+              </section>
+              <section class="container-fluid mb-4" id="lugarFecha"> 
+                      <div class="row">
+                          <div class="col-md-6">
+                            
+                              <img class="img-fluid w-100 h-100" src="./assets/img/honolulu.jpg" alt="Mar del plata">
+                            
+                          </div>
+                          <div class="col-md-6 bg-rgb(53, 58, 64) textoOctubre ">
+                              <h2>Bs As - Octubre</h2>
+                              <p>Buenos Aires es la provincia y localidad mas grande del estado de Argentina.Honolulu es la mas sureña de entre las principales ciudades estadounidenses.
+                                Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu,la ciudad y el condado de Honolulu han formado una ciudad condado consolidada
+                                que cubre toda la ciudad (aproximadamente 600km2 de superficie). 
+                              </p>
+                              <a class="botonConoceM" href="./pages/404.html">Conocé más </a>
+                          </div>  
+                      </div>
+                </section> 
+                <section class="container" id="formOrador">
+                  <div class="text-center">
+                    <div>
+                      <h2 class="tituloArriba">CONVIÉRTETE EN UN </h2>
+                    </div>
+                    <div>
+                      <h2>ORADOR</h2>
+                    </div>
+                    <P class="mb-2">Anótate como orador para dar una charla ignite.Cuéntanos de qué quieres hablar!</P>
+                  </div>
+                </section>
+                <div class="container-fluid ">
+                  <form class=" text-center" action="./pages/404.html">
+                    <!--el input es el campo donde la persona escribe-->
+                    <!--placeholder es un atributo y para que me sugiera que poner uso id-->
+                    <!--REQUIRED te obliga a completar el campo en la pag-->
+                      <div class="">
+                          <input class="col-6 col-md-3" type="text" id="name" name="name" placeholder="Nombre"required>
+                          <input class="col-6 col-md-3" type="text" id="apellido" name="apellido" placeholder="Apellido"required>
+                      </div>
+                      <br>
+                      <div >
+                        <textarea class="col-12 col-md-6" name="" id="" cols="55" rows="5" placeholder="Sobre qué quieres hablar?"required></textarea>
+                      </div>
+                      
+                      <p>Recuerda incluir un título para tu charla</p>
+                      
+                      <div>
+                        <!--VALUE es un atributo que es donde se va a guardar la info que escriba el usuario y viaja al servidor-->
+                        <!--al decir input html ya lo interpreta como boton-->
+                        <!--en este caso se dice que la info viaja por url 
+                        <input type="reset" value="Limpiar formulario">
+                        <!--contraseña encriptada puedo con el derecho inspeccionar y cambiar a text
+                        <input type="email" id="email" name="email" placeholder="ejemplo@servidor.com">
+                        <input type="password" placeholder="contraseña"> -->   
+                        <input class="col-12 col-md-6 enviar" type="submit" value="Enviar">
+                      </div>
+                  </form>
+                </div> 
+         </main>
+              <footer class="footer  text-center ">
+                <div class="container h-100">
+                  <nav class="row justify-content-evenly align-items-center h-100 flex-wrap">
+                    <a class="col"href="../PrimerProyectoGit/pages/404.html">Preguntas frecuentes</a>
+                    <a class="col"href="#formOrador">Contactanos</a>
+                    <a class="col"href="../PrimerProyectoGit/pages/404.html">Prensa</a>
+                    <a class="col"href="#conferencia">Conferencias</a>
+                    <a class="col"href="../PrimerProyectoGit/pages/404.html">Términos y condiciones</a>
+                    <a class="col"href="../PrimerProyectoGit/pages/404.html">Privacidad</a>
+                    <a class="col"href="#formOrador">Estudiantes</a>
+                  </nav>
+                </div>
+              </footer>
+              <script src= "./js/bootstrap.bundle.min.js"></script>
+             
+
+      
+  </body>
+</html>
+
+            
+         
+
+
+              
+                
+                <!--section class="seccionForm">
+                  <div class="tituloForm">
+                      <div>
+                        <h2 class="tituloArriba">CONVIÉRTETE EN UN</h2>
+                      </div>
+                      <div>
+                        <h2>ORADOR</h2>
+                      </div>
+                  </div>
+                  <p>Anótate como orador para dar una charla ignite.Cuéntanos de qué quieres hablar!</p>
+                  <form action="./pages/404.html">
+                    <div class="">
+                          <div class="nomApell">
+                            <!--el input es el campo donde la persona escribe-->
+                            <!--placeholder es un atributo y para que me sugiera que poner uso id-->
+                            <!--REQUIRED te obliga a completar el campo en la pag-
+                            <div>
+                              <input class="nombre" type="text" id="name" name="name" placeholder="Nombre"required>
+                            </div>
+                            <div>
+                              <input class="apellido" type="text" id="apellido" name="apellido" placeholder="Apellido"required>
+                            </div>
+                          </div>
+                          <br>
+                          <!--contraseña encriptada puedo con el derecho inspeccionar y cambiar a text
+                          <div>
+                            
+                            
+                           <input type="email" id="email" name="email" placeholder="ejemplo@servidor.com">
+                            <input type="password" placeholder="contraseña">
+
+                          </div>--
+                          
+
+                          <div class="texto">
+                            <textarea name="" id="" cols="55" rows="5" placeholder="Sobre qué quieres hablar?"required></textarea>
+                          </div>
+                          <br>
+                          <p>Recuerda incluir un título para tu charla</p>
+                            <!--VALUE es un atributo que es donde se va a guardar la info que escriba el usuario y viaja al servidor-->
+                            <!--al decir input html ya lo interpreta como boton-->
+                            <!--en este caso se dice que la info viaja por url 
+                            <input type="reset" value="Limpiar formulario"> --      
+                            <input class="enviar" type="submit" value="Enviar">
+                          </div>
+                    </div> 
+                  </form>
+            </section>
+            <article--</article-->
+     
+
+              <!--<section>
+              <!--<h2><span>Conoce a los</span><br>oradores</h2> 
               <div class="seccionOradores">
 
                   <div>
@@ -128,10 +331,12 @@ identarlo hacia la derecha(con tab y si quiero volver shif y tab)-->
               </div>
                  
                   <!--<h2>Conoce a los</h2>
-                  <h2>oradores </h2> --> 
-                  <div class="padreTarjetas">
+                  <h2>oradores </h2> -- >
+                 
                     <div class="tarjeta">
-                      <!--IMAGENES ABSOLUTAS Y RELATIVAS-->
+                      <!--IMAGENES ABSOLUTAS Y RELATIVAS
+                 <div class="padreTarjetas">
+                    <div class="tarjeta"> 
                         
                       <img src="./assets/img/steve.jpg" alt="Imagen de Steve Jobs con celular en mano y"width="600" loading="lazy">
                       <div class="tituloH4">
@@ -188,11 +393,17 @@ identarlo hacia la derecha(con tab y si quiero volver shif y tab)-->
                      
                     </div>
                     
-                  </div>
+                  </div> 
                   
                 
             </section>
 
+           
+            
+            
+            <!--
+           
+           <!--borre
             <section class="octubre"> 
               <div class="padreOctubre">
 
@@ -226,7 +437,7 @@ identarlo hacia la derecha(con tab y si quiero volver shif y tab)-->
               </div>
              
               
-            </section>
+            </section>-->
             <!--agregar seccion que diga podes encontrarnos en 
            
             <section class="mapa">
@@ -239,82 +450,8 @@ identarlo hacia la derecha(con tab y si quiero volver shif y tab)-->
 
               
             </section>-->
-                <section class="seccionForm">
-
-                      <div class="tituloForm">
-
-                          <div>
-                            <h2 class="tituloArriba">CONVIÉRTETE EN UN</h2>
-                          
-                          </div>
-
-                          <div>
-                            <h2>ORADOR</h2>
-                        
-                          </div>
-                      </div>
-                      
-
-                      <p>Anótate como orador para dar una charla ignite.Cuéntanos de qué quieres hablar!</p>
-
-
-                      <form action="./pages/404.html">
-
-                            <div class="contenedorForm">
-                              <div>
-                                <!--el input es el campo donde la persona escribe-->
-                                <!--placeholder es un atributo y para que me sugiera que poner uso id-->
-                                <!--REQUIRED te obliga a completar el campo en la pag-->
-                                <input class="nombre" type="text" id="name" name="name" placeholder="Nombre"required>
-                                <input class="apellido" type="text" id="apellido" name="apellido" placeholder="Apellido"required>
-                                
-                              </div>
-                              <br>
-                              <!--contraseña encriptada puedo con el derecho inspeccionar y cambiar a text
-                              <div>
-                                
-                                
-                                <input type="email" id="email" name="email" placeholder="ejemplo@servidor.com">
-                                <input type="password" placeholder="contraseña">
-
-                              </div>
-                              <br>-->
-
-                              <div class="texto">
-                                <textarea name="" id="" cols="55" rows="5" placeholder="Sobre qué quieres hablar?"required></textarea>
-                              </div>
-                              <br>
-                              <p>Recuerda incluir un título para tu charla</p>
-                              
-                              
-                                <!--VALUE es un atributo que es donde se va a guardar la info que escriba el usuario y viaja al servidor-->
-                                <!--al decir input html ya lo interpreta como boton-->
-                                <!--en este caso se dice que la info viaja por url -->
-                              <!--   <input type="reset" value="Limpiar formulario">        -->
-                                <input class="enviar" type="submit" value="Enviar">
-                          </div>
-
-
-                        
-
-
-                        </div>
-
-                            
-                             
-
-                      
-                          
-
-                            
-
-                      </form>
-
-                </section>
-                <article></article>
-        </main>
-       
-
+                
+           <!--
               <footer class="footer">
 
                 <Div class="iconos">
@@ -349,10 +486,8 @@ identarlo hacia la derecha(con tab y si quiero volver shif y tab)-->
                   </div>
                 </Div>
 
-              </footer>
-          <script src= "./js/bootstrap.bundle.min.js"></script>
-      </body>
-</html>
+              </footer> 
+
 
  <!--
 
